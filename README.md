@@ -103,11 +103,11 @@ Full detail: [`docs/architecture.md`](docs/architecture.md)
 
 ## 📸 Screenshots
 
-| Landing | Dashboard | Confidence score |
+| Landing | Dashboard (live) | Confidence score |
 | --- | --- | --- |
-| _coming soon_ | _coming soon_ | _coming soon_ |
+| _coming soon_ | [![MoneyWise SA dashboard on the live deployment](screenshots/dashboard-live.png)](https://moneywise-sa.vercel.app/app) | _coming soon_ |
 
-> Add device screenshots to `/screenshots` and embed them here before publishing the portfolio version.
+> Live production dashboard: R8,000 income · R6,500 expenses · R1,500 left · Confidence 60/100 · API connected (**Live** badge). Add more device screenshots to `/screenshots` here before publishing the portfolio version.
 
 ---
 
@@ -186,7 +186,7 @@ Complete request/response examples: [`docs/api.md`](docs/api.md)
 | 6 · Auth, charts, AI coach, notifications | ⏳ |
 | 7 · Frontend tests & security hardening | 🟡 |
 | 8 · Deploy to Vercel + Render | ✅ |
-| 9 · GitHub, demo video, portfolio | 🟡 repo up, video/screenshots pending |
+| 9 · GitHub, demo video, portfolio | 🟡 repo + live demo + dashboard screenshot ✅, video pending |
 
 Full plan: [`docs/roadmap.md`](docs/roadmap.md)
 
