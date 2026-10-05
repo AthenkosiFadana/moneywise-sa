@@ -1,10 +1,10 @@
 # User personas
 
-## 1. Thando — first salary
+## 1. Asisipho — first salary
 
 **Age:** 22 · **Location:** Soweto, Gauteng · **Income:** R8,000/month (entry-level job)
 
-**Context:** Thando started her first job. Rent is R2,500, transport R1,200, and her
+**Context:** Asisipho started her first job. Rent is R2,500, transport R1,200, and her
 mother expects R500 each month. Friends want to go out; there is a phone contract
 she is considering.
 
@@ -113,7 +113,7 @@ short-term loan. Wants to clear debt but keeps missing the bigger picture.
 
 | Persona | Primary need | Signature MoneyWise SA feature |
 | --- | --- | --- |
-| Thando | See what is left | Financial dashboard |
+| Asisipho | See what is left | Financial dashboard |
 | Sipho | Make it last | Savings calculator |
 | Naledi | Handle variable income | Emergency fund calculator |
 | Bongani | Escape debt | Debt repayment calculator |

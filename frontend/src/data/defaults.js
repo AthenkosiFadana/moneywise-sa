@@ -38,7 +38,7 @@ export const GOAL_PRESETS = [
 
 export const DEFAULT_STATE = {
   profile: {
-    name: 'Thando',
+    name: 'Asisipho',
     income: 8000,
     source: 'Salary',
     month: 'Current month',

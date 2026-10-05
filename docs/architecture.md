@@ -113,7 +113,7 @@ Firestore collections when authentication lands.
 
 ```jsonc
 {
-  "profile":   { "name": "Thando", "income": 8000, "source": "Salary" },
+  "profile":   { "name": "Asisipho", "income": 8000, "source": "Salary" },
   "expenses":  [ { "id": "…", "label": "Rent", "category": "Housing", "amount": 2500 } ],
   "budget":    [ { "id": "…", "name": "Housing", "icon": "🏠", "budget": 2500, "spent": 2300 } ],
   "goals":     [ { "id": "…", "name": "Car", "target": 60000, "saved": 18500, "monthly": 2000 } ],

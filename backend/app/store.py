@@ -9,7 +9,7 @@ import sqlite3
 from datetime import datetime, timezone
 
 DEFAULT_STATE = {
-    "profile": {"name": "Thando", "income": 8000, "source": "Salary", "month": "Current month"},
+    "profile": {"name": "Asisipho", "income": 8000, "source": "Salary", "month": "Current month"},
     "expenses": [],
     "budget": [],
     "goals": [],

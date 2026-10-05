@@ -1,7 +1,7 @@
 from app.services.confidence import calculate_confidence
 
 SAMPLE_STATE = {
-    "profile": {"name": "Thando", "income": 8000, "source": "Salary"},
+    "profile": {"name": "Asisipho", "income": 8000, "source": "Salary"},
     "expenses": [
         {"label": "Rent", "category": "Housing", "amount": 2500},
         {"label": "Taxi", "category": "Transport", "amount": 1200},
