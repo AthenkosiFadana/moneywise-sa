@@ -6,7 +6,7 @@
 
 > 🇿🇦 Access to banking is not the same as financial confidence. MoneyWise SA closes that gap with simple budgeting tools, real South African money context, a signature **Money Confidence Score**, calculators, lessons and an educational assistant.
 
-[Live demo](#-try-it) · [API docs](docs/api.md) · [Architecture](docs/architecture.md) · [Roadmap](docs/roadmap.md)
+[Live demo](https://moneywise-sa.vercel.app) · [API docs](docs/api.md) · [Architecture](docs/architecture.md) · [Roadmap](docs/roadmap.md)
 
 ---
 
@@ -148,6 +148,21 @@ cd backend  && python -m pytest
 
 ---
 
+## ☁️ Deployment
+
+| Piece | Host | Status |
+| --- | --- | --- |
+| Frontend | Vercel → [moneywise-sa.vercel.app](https://moneywise-sa.vercel.app) | ✅ live |
+| Backend | Render (free tier, `render.yaml` blueprint) | 🔧 one-click setup |
+
+**Backend on Render:** New → **Blueprint** → connect this repo → Render reads
+[`render.yaml`](render.yaml) (root `backend/`, `gunicorn run:app`, CORS locked to
+the Vercel URL, SQLite on `/tmp`). Once it's live, set `VITE_API_URL` in the
+Vercel project to `https://moneywise-sa-api.onrender.com/api` and redeploy —
+the top bar flips from **Local** to **Live**.
+
+---
+
 ## 📡 API
 
 `POST /api/assistant/ask`, `POST /api/insights/confidence`,
@@ -170,8 +185,8 @@ Complete request/response examples: [`docs/api.md`](docs/api.md)
 | 5 · Database (SQLite → Firestore) | ✅ interim |
 | 6 · Auth, charts, AI coach, notifications | ⏳ |
 | 7 · Frontend tests & security hardening | 🟡 |
-| 8 · Deploy to Vercel + Render | ⏳ |
-| 9 · GitHub, demo video, portfolio | ⏳ |
+| 8 · Deploy to Vercel + Render | 🟡 frontend live, API pending |
+| 9 · GitHub, demo video, portfolio | 🟡 repo up, video/screenshots pending |
 
 Full plan: [`docs/roadmap.md`](docs/roadmap.md)
 

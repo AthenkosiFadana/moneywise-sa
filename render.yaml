@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: moneywise-sa-api
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn run:app --bind 0.0.0.0:$PORT --workers 2
+    envVars:
+      - key: CORS_ORIGINS
+        value: https://moneywise-sa.vercel.app
+      - key: MONEYWISE_DB
+        value: /tmp/moneywise.db
+      - key: SECRET_KEY
+        generateValue: true
+    autoDeploy: true
