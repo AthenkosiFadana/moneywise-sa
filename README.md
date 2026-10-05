@@ -105,9 +105,9 @@ Full detail: [`docs/architecture.md`](docs/architecture.md)
 
 | Landing | Dashboard (live) | Confidence score |
 | --- | --- | --- |
-| _coming soon_ | [![MoneyWise SA dashboard showing the Asisipho sample account](screenshots/dashboard-live.jpg)](https://moneywise-sa.vercel.app/app) | _coming soon_ |
+| _coming soon_ | [![MoneyWise SA dashboard showing the Asisipho sample account](screenshots/dashboard-live.png)](https://moneywise-sa.vercel.app/app) | _coming soon_ |
 
-> Dashboard with the sample account **Asisipho**: R8,000 income · R6,500 expenses · R1,500 left · Confidence 60/100. Add more device screenshots to `/screenshots` here before publishing the portfolio version.
+> Dashboard with the sample account **Asisipho**: R8,000 income · R6,500 expenses · R1,500 left · Savings rate 19% · Confidence 60/100. Add more device screenshots to `/screenshots` here before publishing the portfolio version.
 
 ---
 
