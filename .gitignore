@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Build output
+dist/
+build/
+.vercel/
+.next/
+
+# Local data & secrets
+backend/moneywise.db
+*.db
+.env
+.env.*
+!.env.example
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*

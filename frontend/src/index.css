@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #effaf4;
+  --color-brand-100: #d9f3e5;
+  --color-brand-200: #b5e7cf;
+  --color-brand-300: #84d4b3;
+  --color-brand-400: #4eb995;
+  --color-brand-500: #279d79;
+  --color-brand-600: #187e62;
+  --color-brand-700: #13654f;
+  --color-brand-800: #115140;
+  --color-brand-900: #0f4336;
+  --color-brand-950: #07261f;
+
+  --color-gold-100: #fdf3d7;
+  --color-gold-200: #f9e5a8;
+  --color-gold-300: #f5d274;
+  --color-gold-400: #efba43;
+  --color-gold-500: #e0a92b;
+  --color-gold-600: #c5881d;
+  --color-gold-700: #a06719;
+  --color-gold-800: #84521b;
+  --color-gold-900: #6f441a;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800 font-sans antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full;
+}
+
+@layer components {
+  .mw-card {
+    @apply rounded-2xl border border-slate-200/80 bg-white p-4 shadow-[0_1px_2px_rgba(15,23,42,0.04)] sm:p-5;
+  }
+
+  .mw-input {
+    @apply w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-800
+      outline-none transition placeholder:text-slate-400 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/15;
+  }
+
+  .mw-label {
+    @apply mb-1.5 block text-xs font-semibold uppercase tracking-wide text-slate-500;
+  }
+
+  .mw-btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold
+      transition active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50
+      bg-brand-600 text-white shadow-sm shadow-brand-600/25 hover:bg-brand-700;
+  }
+
+  .mw-btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold
+      transition active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50
+      border border-slate-300 bg-white text-slate-700 hover:bg-slate-50;
+  }
+
+  .mw-btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold
+      transition active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50
+      bg-gold-500 text-brand-950 shadow-sm hover:bg-gold-400;
+  }
+
+  .mw-chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white
+      px-3 py-1.5 text-xs font-medium text-slate-600 transition hover:border-brand-400 hover:text-brand-700;
+  }
+
+  .mw-chip-active {
+    @apply border-brand-500 bg-brand-50 text-brand-700;
+  }
+}
